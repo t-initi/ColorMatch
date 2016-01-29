@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.initi.thierry.colormatchapp_v02.GameResultActivity">
+
+    <TableLayout
+    android:id="@+id/res_table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="0.1"
+                android:id="@+id/player_name"
+                android:text="Player"
+                android:textStyle="bold"
+                android:background="#888888"
+                android:layout_column="0"
+                android:textAlignment="center"
+                android:textIsSelectable="false"
+                android:layout_margin="2dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="0.8"
+                android:id="@+id/score"
+                android:text="Score"
+                android:background="#888888"
+                android:layout_column="1"
+                android:textStyle="bold"
+                android:textIsSelectable="false"
+                android:layout_margin="2dp"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="0.1"
+                android:textAlignment="center"
+                android:id="@+id/date_score"
+                android:text="Date"
+                android:textStyle="bold"
+                android:background="#888888"
+                android:textIsSelectable="false"
+                android:layout_column="2"
+                android:layout_margin="2dp"
+
+                />
+
+
+
+        </TableRow>
+
+        <TableRow android:id="@+id/main_row"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_weight="0.1"
+                android:id="@+id/name_res"
+                android:text="Player"
+                android:textStyle="bold"
+                android:background="#8c9cac"
+                android:layout_column="0"
+                android:textAlignment="center"
+                android:textIsSelectable="false"
+                android:layout_margin="2dp"
+                />
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_weight="0.8"
+                android:id="@+id/score_res"
+                android:text="Score"
+                android:background="#8c9cac"
+                android:layout_column="1"
+                android:textStyle="bold"
+                android:textIsSelectable="false"
+                android:layout_margin="2dp"
+                android:textAlignment="center"
+
+
+                />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_weight="0.1"
+                android:textAlignment="center"
+                android:id="@+id/date_res"
+                android:text="Date"
+                android:textStyle="bold"
+                android:background="#8c9cac"
+
+                android:textIsSelectable="false"
+                android:layout_column="2"
+                android:layout_margin="2dp"
+
+                />
+        </TableRow>
+</TableLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/edit_name"
+            android:text="Edit Name"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/play_again"
+            android:layout_weight="0.25"
+            android:text="Play Again"
+
+            />
+
+        <RatingBar
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/rating_bar"
+           android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

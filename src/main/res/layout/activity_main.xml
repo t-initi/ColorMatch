@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    tools:context="com.initi.thierry.colormatchapp_v02.MainActivity"
+    android:background="@drawable/bg_image">
+
+
+
+
+
+    <ImageButton
+        android:layout_width="225dp"
+        android:layout_height="30dp"
+        android:id="@+id/play_bt"
+        android:background="@drawable/play_bt"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:id="@+id/sore_bt"
+        android:background="@drawable/view_score_bt"
+        android:layout_above="@+id/play_bt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mute_bt"
+        android:src="@drawable/mute_on_min"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
